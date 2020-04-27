@@ -23,7 +23,7 @@ public class Test1_ModificarDocumento {
 		// nos da MongoDB por default
 		MongoDatabase database = mongoClient.getDatabase("test");
 		// Obtener collection
-		MongoCollection<Document> collectionLocal = database.getCollection("test_collection_local2");
+		MongoCollection<Document> collectionLocal = database.getCollection("test_collection_local");
 		// Filtro del documento que quiero eliminar
 		Bson filtro = Filters.eq("carrera", "licenciatura en sistemas");
 		Bson documentoNuevo = new Document("carrera", "licenciatura en audiovision");

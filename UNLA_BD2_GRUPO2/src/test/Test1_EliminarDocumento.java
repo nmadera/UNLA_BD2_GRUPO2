@@ -23,7 +23,7 @@ public class Test1_EliminarDocumento {
 		// nos da MongoDB por default
 		MongoDatabase database = mongoClient.getDatabase("test");
 		// Obtener collection
-		MongoCollection<Document> collectionLocal = database.getCollection("test_collection_local2");
+		MongoCollection<Document> collectionLocal = database.getCollection("test_collection_local");
 		// Filtro del documento que quiero eliminar
 		Bson filtro = Filters.eq("universidad", "universidad nacional de lanus");
 		collectionLocal.deleteOne(filtro);

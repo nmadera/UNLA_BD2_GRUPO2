@@ -34,7 +34,7 @@ public class Test1_AgregarDocumento {
 				.append("alumnos", new Document("ejemplo1", 12345678).append("ejemplo2", 12345678));
 
 		// Obtener collection creada anteriormente
-		MongoCollection<Document> collectionLocal = database.getCollection("test_collection_local2");
+		MongoCollection<Document> collectionLocal = database.getCollection("test_collection_local");
 
 		// Esta linea de abajo inserta el documento de arriba a la coleccion
 		collectionLocal.insertOne(documento);

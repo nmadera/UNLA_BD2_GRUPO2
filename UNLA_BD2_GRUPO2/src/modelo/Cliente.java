@@ -74,6 +74,12 @@ public class Cliente {
 	public void setDomicilio(Domicilio domicilio) {
 		this.domicilio = domicilio;
 	}
+
+	@Override
+	public String toString() {
+		return "Cliente [apellido=" + apellido + ", nombre=" + nombre + ", dni=" + dni + ", numeroAfiliado="
+				+ numeroAfiliado + ", domicilio=" + domicilio + "]";
+	}
 	
 	
 
